@@ -45,14 +45,14 @@ const uploadFile = catchAsync(async (req, res) => {
   });
 });
 
-const uploadImages = catchAsync(async (req, res) => {
-  const upload = storage.array('images', 12);
+const uploadImage = catchAsync(async (req, res) => {
+  const upload = storage.single('file');
   upload(req, res, async function(err) {
     if (err) {
       return res.status(500).send({ error: err });
     }
-    const { images } = req;
-    res.json(images);
+    const { file } = req;
+    res.json(file);
   });
 });
 
@@ -64,5 +64,5 @@ module.exports = {
   destroy,
   check,
   uploadFile,
-  uploadImages,
+  uploadImage,
 };

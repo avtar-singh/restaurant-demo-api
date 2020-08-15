@@ -6,7 +6,7 @@ const addRestaurant = {
       .required()
       .min(2)
       .max(100),
-    images: Joi.array().items(Joi.object()),
+    image: Joi.string(),
     location: Joi.string(),
     menus: Joi.array().items(Joi.object()),
   }),

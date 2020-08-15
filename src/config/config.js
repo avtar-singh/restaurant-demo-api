@@ -62,8 +62,8 @@ module.exports = {
     from: envVars.EMAIL_FROM,
   },
   cloudinary: {
-    cloud_name: 'unoia',
-    api_key: '112686368149861',
-    api_secret: '4QxWxPh0Bh_zXnXDKvMBq32LEH8',
+    cloud_name: 'restaurant-demo',
+    api_key: '698859214543622',
+    api_secret: 'E2WTphqw_DVnOewa1TV5TN4MVLY',
   },
 };

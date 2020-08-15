@@ -8,8 +8,8 @@ cloudinary.config(config.cloudinary);
 const storage = cloudinaryStorage({
   cloudinary,
   folder: 'images',
-  allowedFormats: ['jpg', 'png'],
 });
+
 const upload = multer({
   storage,
 });

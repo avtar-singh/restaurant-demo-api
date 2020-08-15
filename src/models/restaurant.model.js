@@ -31,8 +31,8 @@ const RestaurantSchema = mongoose.Schema(
       required: true,
       trim: true,
     },
-    images: {
-      type: Array,
+    image: {
+      type: String,
       required: false,
       trim: true,
     },

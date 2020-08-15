@@ -22,8 +22,8 @@ router
   .put(restaurantController.update)
   .delete(restaurantController.destroy);
 
-// Upload Restaurant Images
-router.post('/uploadImages', restaurantController.uploadImages);
+// Upload Restaurant Image
+router.post('/uploadImage', restaurantController.uploadImage);
 
 // Upload Restaurant Video
 router.post('/uploadVideo', restaurantController.uploadFile);

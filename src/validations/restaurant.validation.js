@@ -11,6 +11,7 @@ const addRestaurant = {
     menus: Joi.array().items(Joi.object()),
   }),
 };
+
 module.exports = {
   addRestaurant,
 };
